@@ -3,15 +3,29 @@
   --solid: #262626;
 }
 .nav {
-  margin-left: 1em;
+  margin-right: 5em;
+  float: left;
+  margin-left: 5vw;
+  margin-top: 5vh;
 }
 ul {
   list-style-type: none;
-  padding: 0;
 }
 li {
+  position: relative;
   display: inline-block;
-  margin-right: 8em;
+  margin-right: 5em;
+}
+li:first-child:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  height: 3px;
+  top: 3.4em;
+  background-color: var(--primary);
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
 }
 li a {
   display: inline-block;
@@ -20,12 +34,12 @@ li a {
   text-align: center;
   padding: 16px;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 a:after {
   content: "";
   position: absolute;
-  width: 40%;
+  width: 50%;
   transform: scaleX(0);
   left: 25%;
   height: 3px;

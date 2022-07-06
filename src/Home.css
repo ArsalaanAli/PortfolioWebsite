@@ -1,4 +1,37 @@
-h2 {
+.hi,
+.name {
   color: white;
-  font-size: 3em;
+  font-size: 5vw;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.name:after {
+  content: "Arsalaan";
+  border-bottom: 3px var(--primary) solid;
+}
+.title-holder {
+  margin-left: 8vw;
+  margin-top: 35vh;
+}
+.typewriter {
+  color: #15c06d;
+  font-size: 5vw;
+}
+.cursor {
+  color: var(--primary);
+  font-size: 5vw;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

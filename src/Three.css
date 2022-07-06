@@ -1,0 +1,9 @@
+.container {
+  position: absolute;
+  /* border: 1px solid red; */
+  width: 40vw;
+  height: 70vh;
+  right: 5vw;
+
+  top: 20vh;
+}
