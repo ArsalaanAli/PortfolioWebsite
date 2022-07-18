@@ -31,6 +31,8 @@ const TypeText = () => {
           .typeString("Student.")
           .pauseFor(4000)
           .deleteAll()
+          .typeString("Musician.")
+          .pauseFor(4000)
           .start();
       }}
     />

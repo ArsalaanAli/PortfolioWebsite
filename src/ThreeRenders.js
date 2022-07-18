@@ -42,7 +42,7 @@ export default function ThreeRenders() {
 
   return (
     <div className="container">
-      <Canvas camera={{ position: [-5, 4, 4], fov: 90 }}>
+      <Canvas>
         {/* <directionalLight position={[0, 0, 5]} /> */}
         <Lights />
         <Suspense fallback={null}>

@@ -10,20 +10,15 @@ export default function Model({ ...props }) {
   const myMesh = useRef();
   const { nodes, materials } = useGLTF("../../laptop.glb");
 
-  useEffect(() => {
-    myMesh.current.geometry.translate(-1, 0, 0);
-  });
-
   useFrame(({ clock }) => {
     myMesh.current.rotation.y = -clock.getElapsedTime();
-    myMesh.current.translate(-1, 0, 0);
   });
 
   return (
-    <group ref={myMesh} {...props} dispose={null}>
+    <group ref={myMesh} {...props} dispose={null} position={[0, 0, -2]}>
       <group
-        position={[0, 0, -2]}
-        rotation={[0, 0, -Math.PI / 2]}
+        position={[0, 0, 0]}
+        rotation={[Math.PI / 16, -Math.PI / 2, -Math.PI / 2]} //LAPTOP DOESNT SHRINK WHEN CONTAINER DOES
         scale={[1.48, 0.2, 2.02]}
       >
         <mesh geometry={nodes.Cube002.geometry} material={materials.Material} />
@@ -41,3 +36,9 @@ export default function Model({ ...props }) {
 }
 
 useGLTF.preload("../../laptop.glb");
+
+// <group ref={myMesh} {...props} dispose={null} position={[0, -2, -4]}>
+//   <group
+//     position={[0, 0, 0]}
+//     rotation={[Math.PI / 16, -Math.PI / 2, -Math.PI / 2]}
+//     scale={[1.48, 0.2, 2.02]}
