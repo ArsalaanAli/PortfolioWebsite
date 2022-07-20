@@ -23,7 +23,6 @@ const Models = (props) => {
   var shrinking = false;
 
   if (props.currentModel !== displayModel) {
-    switchModel();
     displayModel = props.currentModel;
   }
 
