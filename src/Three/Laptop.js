@@ -6,7 +6,7 @@ import React, { useRef, useEffect } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 
-export default function Model({ ...props }) {
+export default function Laptop({ ...props }) {
   const { viewport } = useThree();
   const myMesh = useRef();
   const { nodes, materials } = useGLTF("../../laptop.glb");

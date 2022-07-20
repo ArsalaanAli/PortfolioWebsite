@@ -1,21 +1,23 @@
-import React from "react";
+import { React, useRef, useState } from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
 import ThreeRenders from "./ThreeRenders";
 export default function Home() {
+  const [currentModel, setCurrentModel] = useState(0);
+
   return (
     <div>
-      <ThreeRenders />
+      <ThreeRenders currentModel={currentModel} />
       <div className="title-holder">
         <p className="hi name">Hi, I'm </p>
         {/* <p className="name"></p> */}
-        <TypeText />
+        <TypeText setCurrentModel={setCurrentModel} />
       </div>
     </div>
   );
 }
 
-const TypeText = () => {
+const TypeText = (props) => {
   return (
     <Typewriter
       options={{
@@ -27,18 +29,23 @@ const TypeText = () => {
         typewriter
           .typeString("Web Developer.")
           .pauseFor(4000)
+          .callFunction(() => {
+            props.setCurrentModel(1);
+          })
           .deleteAll()
           .typeString("Student.")
           .pauseFor(4000)
+          .callFunction(() => {
+            props.setCurrentModel(2);
+          })
           .deleteAll()
           .typeString("Musician.")
           .pauseFor(4000)
+          .callFunction(() => {
+            props.setCurrentModel(0);
+          })
           .start();
       }}
     />
   );
-};
-
-const onNode = () => {
-  console.log("hello");
 };
