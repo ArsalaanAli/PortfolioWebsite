@@ -2,6 +2,7 @@ import { React, useRef, useState, Suspense, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import "./Three.css";
 import Laptop from "./Three/Laptop";
+import Book from "./Three/Book";
 import Lights from "./Three/Lights";
 
 export default function ThreeRenders(props) {
@@ -10,7 +11,7 @@ export default function ThreeRenders(props) {
       <Canvas>
         <Lights />
         <Suspense fallback={null}>
-          <Models currentMode={props.currentModel} />
+          <Models currentModel={props.currentModel} />
         </Suspense>
       </Canvas>
     </div>
@@ -18,13 +19,22 @@ export default function ThreeRenders(props) {
 }
 
 const Models = (props) => {
-  var displayModel = 0;
-  var scale = [1, 1, 1];
+  const [displayModel, setDisplayModel] = useState(0);
   var shrinking = false;
+  const myMesh = useRef();
+
+  useFrame(({ clock }) => {});
 
   if (props.currentModel !== displayModel) {
-    displayModel = props.currentModel;
+    shrinking = true;
   }
-
-  return <Laptop shrink={shrinking} />;
+  console.log(displayModel);
+  if (displayModel === 0) {
+    console.log("top");
+    return <Laptop shrink={shrinking} callNextModel={setDisplayModel} />;
+  }
+  if (displayModel === 1) {
+    console.log("book");
+    return <Book shrink={shrinking} />;
+  }
 };
