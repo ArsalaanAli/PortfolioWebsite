@@ -1,5 +1,6 @@
 export const Shrink = (meshRef) => {
-  meshRef.current.scale.multiplyScalar(0.8);
+  console.log("ok");
+  meshRef.current.scale.multiplyScalar(0.7);
   if (meshRef.current.scale.x <= 0.01) {
     return true;
   }
@@ -7,8 +8,8 @@ export const Shrink = (meshRef) => {
 };
 
 export const Grow = (meshRef) => {
+  console.log("ok2");
   meshRef.current.scale.multiplyScalar(1.2);
-  console.log(meshRef.current.scale);
   if (meshRef.current.scale.x >= 1) {
     meshRef.current.scale.x = 1;
     meshRef.current.scale.y = 1;
@@ -16,4 +17,12 @@ export const Grow = (meshRef) => {
     return true;
   }
   return false;
+};
+
+export const SetStartingSize = (meshRef) => {
+  console.log("ok3");
+
+  meshRef.current.scale.x = 0.01;
+  meshRef.current.scale.y = 0.01;
+  meshRef.current.scale.z = 0.01;
 };

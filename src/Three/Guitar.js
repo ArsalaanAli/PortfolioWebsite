@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Grow, SetStartingSize, Shrink } from "./MorphFunctions";
 
-export default function Book(props) {
+export default function Guitar(props) {
   const ref = useRef();
   var grow = true;
   var stillShrink = true;
@@ -14,10 +14,11 @@ export default function Book(props) {
   }, []);
 
   useFrame(() => {
+    console.log(props.shrink);
     if (props.shrink && stillShrink) {
       if (Shrink(ref)) {
         stillShrink = false;
-        props.callNextModel(2);
+        props.callNextModel(0);
       }
     }
     if (!props.shrink && grow) {
