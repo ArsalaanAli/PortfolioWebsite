@@ -14,7 +14,6 @@ export default function Guitar(props) {
   }, []);
 
   useFrame(() => {
-    console.log(props.shrink);
     if (props.shrink && stillShrink) {
       if (Shrink(ref)) {
         stillShrink = false;

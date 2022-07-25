@@ -30,19 +30,13 @@ const Models = (props) => {
   if (props.currentModel !== displayModel) {
     shrinking = true;
   }
-  console.log(displayModel);
   if (displayModel === 0) {
-    console.log("laptop");
     return <Laptop shrink={shrinking} callNextModel={setDisplayModel} />;
   }
   if (displayModel === 1) {
-    console.log("book");
-
     return <Book shrink={shrinking} callNextModel={setDisplayModel} />;
   }
   if (displayModel === 2) {
-    console.log("other");
-
     return <Guitar shrink={shrinking} callNextModel={setDisplayModel} />;
   }
 };
