@@ -27,7 +27,7 @@ const TypeText = (props) => {
       }}
       onInit={(typewriter) => {
         typewriter
-          .typeString("Web Developer.")
+          .typeString("Developer.")
           .pauseFor(4000)
           .callFunction(() => {
             props.setCurrentModel(1);

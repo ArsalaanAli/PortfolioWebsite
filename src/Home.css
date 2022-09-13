@@ -11,8 +11,10 @@
   border-bottom: 3px var(--primary) solid;
 }
 .title-holder {
-  margin-left: 8vw;
-  margin-top: 35vh;
+  /* outline: 1px solid green; */
+  width: 60vw;
+  margin-left: 10vw;
+  margin-top: 12vw;
 }
 .typewriter {
   color: #15c06d;

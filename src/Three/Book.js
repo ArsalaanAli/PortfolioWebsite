@@ -31,7 +31,7 @@ export default function Book(props) {
   return (
     <group ref={ref} {...props} dispose={null} position={[0, 0, -2]}>
       <group
-        position={[0, 0, 0]}
+        position={[0, -0.5, 0]}
         scale={[0.72, 1.81, 1.41].map((x) => x * (viewport.width / 10))}
         rotation={[Math.PI / 4, -Math.PI / 2, -Math.PI / 2]}
       >

@@ -29,7 +29,7 @@ export default function Guitar(props) {
   });
 
   return (
-    <group ref={ref} {...props} dispose={null} position={[0, 0.5, 0]}>
+    <group ref={ref} {...props} dispose={null} position={[0, 0, 0]}>
       <group
         position={[0, viewport.width / 10, 0]}
         rotation={[-Math.PI / 8, -Math.PI / 2, -Math.PI / 2]}

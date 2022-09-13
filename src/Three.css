@@ -1,9 +1,9 @@
 .container {
-  position: absolute;
+  position: relative;
+  float: right;
   /* border: 1px solid red; */
   width: 40vw;
-  height: 70vh;
+  height: 70vw;
   right: 7vw;
-
-  top: 10vh;
+  top: -28vw;
 }
