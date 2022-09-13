@@ -24,7 +24,7 @@ li a {
   padding-top: 16px;
   padding-right: 16px;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 a::after {
   content: "";
@@ -42,4 +42,13 @@ a:hover::after,
 a:focus::after {
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
+}
+
+@media only screen and (max-width: 750px) {
+  li {
+    margin: 1vw;
+  }
+  li a {
+    font-size: 2.5vw;
+  }
 }
