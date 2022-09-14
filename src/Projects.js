@@ -2,6 +2,9 @@ import "./Project.css";
 export default function Projects() {
   return (
     <div>
+      <div className="project">
+        <h1 className="projectTitle">Projects</h1>
+      </div>
       <div>
         <Project />
       </div>
