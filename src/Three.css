@@ -6,4 +6,5 @@
   height: 70vw;
   right: 7vw;
   top: -28vw;
+  z-index: -1;
 }
