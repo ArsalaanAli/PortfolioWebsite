@@ -10,7 +10,7 @@ export default function Home() {
   const [currentModel, setCurrentModel] = useState(0);
 
   return (
-    <div>
+    <div className="homeContainer">
       <ThreeRenders currentModel={currentModel} />
       <div className="title-holder">
         <Sidebar />
