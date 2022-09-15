@@ -1,5 +1,5 @@
 import "./App.css";
-import { React } from "react";
+import { React, useRef } from "react";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Divider from "./Divider";
