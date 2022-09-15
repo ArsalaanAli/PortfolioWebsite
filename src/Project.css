@@ -2,7 +2,17 @@
   position: relative;
   width: 100%;
   height: 5em;
-  border: 2px solid blue;
+  margin-top: 20vw;
+  margin-bottom: 3em;
+}
+.projectTitle::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 0.07em;
+  background-color: var(--primary);
 }
 .projectTitle {
   color: white;
@@ -16,17 +26,24 @@
   position: relative;
   width: 100%;
   height: 30em;
+  margin-top: 10vw;
   border: 1px solid yellow;
 }
 .projectImage {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
   width: 30vw;
   height: auto;
-  float: left;
 }
 .projectText {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
   font-size: 1vw;
   position: relative;
   color: white;
-  float: left;
-  margin-left: 2em;
+  left: 3vw;
 }

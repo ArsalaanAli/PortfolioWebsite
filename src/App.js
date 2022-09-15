@@ -10,7 +10,7 @@ function App() {
     <div className="bg">
       <Navbar />
       <Home />
-      <Divider />
+      {/* <Divider /> */}
       <Projects />
     </div>
   );

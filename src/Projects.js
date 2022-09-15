@@ -22,6 +22,7 @@ function Project(name, image, desc, link) {
       />
       <div className="projectText">
         <h1>Project Name</h1>
+        <p>This is a description of the project found above. wOW WTF?</p>
       </div>
     </div>
   );

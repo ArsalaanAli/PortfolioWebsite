@@ -1,7 +1,11 @@
-import { React, useRef, useState } from "react";
+import { React, useState } from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
 import ThreeRenders from "./ThreeRenders";
+
+import { VscGithub } from "react-icons/vsc";
+import { FaLinkedinIn } from "react-icons/fa";
+
 export default function Home() {
   const [currentModel, setCurrentModel] = useState(0);
 
@@ -9,6 +13,7 @@ export default function Home() {
     <div>
       <ThreeRenders currentModel={currentModel} />
       <div className="title-holder">
+        <Sidebar />
         <p className="hi name">Hi, I'm </p>
         {/* <p className="name"></p> */}
         <TypeText setCurrentModel={setCurrentModel} />
@@ -16,6 +21,28 @@ export default function Home() {
     </div>
   );
 }
+const Sidebar = () => {
+  return (
+    <div className="sidebarContainer">
+      <div className="githubIcon">
+        <VscGithub
+          onClick={() => {
+            window.location.replace("https://github.com/ArsalaanAli");
+          }}
+        />
+      </div>
+      <div className="linkedinIcon">
+        <FaLinkedinIn
+          onClick={() => {
+            window.location.replace(
+              "https://www.linkedin.com/in/arsalaan-ali-9681131a7/"
+            );
+          }}
+        />
+      </div>
+    </div>
+  );
+};
 
 const TypeText = (props) => {
   return (

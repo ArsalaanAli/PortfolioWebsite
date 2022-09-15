@@ -4,18 +4,55 @@
   font-size: 5vw;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5vw;
 }
 .name:after {
   content: "Arsalaan";
   border-bottom: 3px var(--primary) solid;
 }
 .title-holder {
+  position: relative;
   /* outline: 1px solid green; */
   width: 60vw;
-  margin-left: 10vw;
+  margin-left: 15vw;
   margin-top: 12vw;
 }
+
+.sidebarContainer {
+  position: absolute;
+  top: 1vw;
+  left: -3vw;
+  width: 0.5vw;
+  height: 14vw;
+  background-color: var(--primary);
+}
+
+.githubIcon {
+  position: absolute;
+  top: 1vw;
+  left: -5vw;
+  color: var(--primary);
+  transition: 0.2s all ease-in-out;
+  font-size: 4vw;
+}
+
+.githubIcon:hover {
+  color: white;
+}
+
+.linkedinIcon {
+  position: absolute;
+  top: 8vw;
+  left: -5vw;
+  color: var(--primary);
+  transition: 0.2s all ease-in-out;
+  font-size: 4vw;
+}
+
+.linkedinIcon:hover {
+  color: white;
+}
+
 .typewriter {
   color: #15c06d;
   font-size: 5vw;
