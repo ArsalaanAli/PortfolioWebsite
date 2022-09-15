@@ -55,19 +55,19 @@ const TypeText = (props) => {
       onInit={(typewriter) => {
         typewriter
           .typeString("Developer.")
-          .pauseFor(4000)
+          .pauseFor(2000)
           .callFunction(() => {
             props.setCurrentModel(1);
           })
           .deleteAll()
           .typeString("Student.")
-          .pauseFor(4000)
+          .pauseFor(2000)
           .callFunction(() => {
             props.setCurrentModel(2);
           })
           .deleteAll()
           .typeString("Musician.")
-          .pauseFor(4000)
+          .pauseFor(2000)
           .callFunction(() => {
             props.setCurrentModel(0);
           })
