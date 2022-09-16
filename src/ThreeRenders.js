@@ -1,4 +1,4 @@
-import { React, useRef, useState, Suspense, useEffect } from "react";
+import { React, useState, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import "./Three.css";
 import Laptop from "./Three/Laptop";
