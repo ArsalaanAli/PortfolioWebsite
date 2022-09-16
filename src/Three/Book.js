@@ -12,7 +12,6 @@ export default function Book(props) {
 
   useEffect(() => {
     SetStartingSize(ref);
-    grow = true;
   }, []);
 
   useFrame(({ clock }) => {

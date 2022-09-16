@@ -11,7 +11,6 @@ export default function Laptop(props) {
   var grow = true;
 
   useEffect(() => {
-    grow = true;
     SetStartingSize(myMesh);
   }, []);
 
