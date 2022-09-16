@@ -16,7 +16,8 @@ li {
   display: inline-block;
   margin-right: 5vw;
 }
-li a {
+li p {
+  cursor: pointer;
   display: inline-block;
   position: relative;
   color: white;
@@ -26,7 +27,7 @@ li a {
   text-decoration: none;
   font-size: 2vw;
 }
-a::after {
+p::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -38,8 +39,8 @@ a::after {
   transition: opacity 300ms, transform 300ms;
 }
 
-a:hover::after,
-a:focus::after {
+p:hover::after,
+p:focus::after {
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
 }
@@ -48,7 +49,7 @@ a:focus::after {
   li {
     margin: 1vw;
   }
-  li a {
+  li p {
     font-size: 2.5vw;
   }
 }

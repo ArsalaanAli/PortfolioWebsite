@@ -63,7 +63,7 @@
   animation: pulse 1s infinite;
 }
 .homeContainer {
-  outline: 3px solid blue;
+  /* outline: 3px solid blue; */
   position: relative;
   width: 100%;
   height: 40%;
@@ -82,7 +82,7 @@
 }
 @media only screen and (max-width: 1000px) {
   .homeContainer {
-    height: 100%;
+    height: 60vw;
   }
   .title-holder {
     position: absolute;

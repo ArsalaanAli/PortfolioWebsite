@@ -1,0 +1,13 @@
+.amTitle {
+  color: white;
+  text-align: center;
+  font-size: 6vw;
+  margin-top: 5vw;
+}
+
+.amContainer {
+  margin-top: 50vw;
+  height: 50vw;
+  width: 100%;
+  outline: 1px solid blue;
+}

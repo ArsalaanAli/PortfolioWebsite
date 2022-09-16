@@ -1,21 +1,45 @@
 import React from "react";
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <div className="nav">
       <ul>
         <li>
-          <a href="/">Home</a>
+          <p
+            onClick={() => {
+              props.homeRef.current?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Home
+          </p>
         </li>
         <li>
-          <a href="/">Projects</a>
+          <p
+            onClick={() => {
+              props.projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Projects
+          </p>
         </li>
         <li>
-          <a href="/">About Me</a>
+          <p
+            onClick={() => {
+              props.homeRef.current?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            About Me
+          </p>
         </li>
         <li>
-          <a href="/">Contact Me</a>
+          <p
+            onClick={() => {
+              props.homeRef.current?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Contact Me
+          </p>
         </li>
       </ul>
     </div>

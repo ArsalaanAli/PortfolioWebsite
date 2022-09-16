@@ -14,7 +14,7 @@ export default function Home() {
       <ThreeRenders currentModel={currentModel} />
       <div className="title-holder">
         <Sidebar />
-        <p className="hi name">Hi, I'm </p>
+        <div className="hi name">Hi, I'm </div>
         {/* <p className="name"></p> */}
         <TypeText setCurrentModel={setCurrentModel} />
       </div>

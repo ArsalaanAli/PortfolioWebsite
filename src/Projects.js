@@ -3,7 +3,7 @@ import visualg from "./Project Pictures/visualg.png";
 import squadify from "./Project Pictures/squadify.png";
 export default function Projects() {
   return (
-    <div>
+    <div className="overallContainer">
       <div className="project">
         <h1 className="projectTitle">Projects</h1>
       </div>
@@ -12,7 +12,7 @@ export default function Projects() {
           name="Visu-Alg"
           image={visualg}
           desc="An interactive website for visualizing graph traversal algorithms built with React."
-          link="www.visu-alg.com"
+          link="https://www.visu-alg.com"
         />
         <Project
           name="Squadify"

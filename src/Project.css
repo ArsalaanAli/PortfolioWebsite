@@ -3,6 +3,7 @@
   width: 100%;
   height: 5em;
   margin-top: 20vw;
+  outline: 1px solid red;
 }
 .projectTitle::after {
   content: "";
@@ -32,6 +33,7 @@
   width: 70%;
   display: flex;
   justify-content: space-around;
+  outline: 1px solid green;
 }
 .projectImage {
   width: auto;
@@ -59,7 +61,4 @@
 }
 .projectDesc {
   font-size: 1.4vw;
-}
-.overallContainer {
-  position: relative;
 }
