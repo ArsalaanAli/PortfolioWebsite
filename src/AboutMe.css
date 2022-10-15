@@ -10,6 +10,9 @@
   font-size: 2vw;
   margin-top: 5vw;
 }
+.highlightText {
+  color: var(--primary);
+}
 .amContainer {
   margin-top: 50vw;
   height: 50vw;

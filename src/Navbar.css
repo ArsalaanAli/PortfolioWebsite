@@ -3,7 +3,7 @@
   --solid: #262626;
 }
 .nav {
-  margin-top: 5vh;
+  margin-top: 0vh;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -22,7 +22,7 @@ li p {
   position: relative;
   color: white;
   text-align: center;
-  padding-top: 16px;
+  padding-top: 0;
   padding-right: 16px;
   text-decoration: none;
   font-size: 2vw;
@@ -47,7 +47,7 @@ p:focus::after {
 
 @media only screen and (max-width: 750px) {
   li {
-    margin: 1vw;
+    margin: 0 1vw;
   }
   li p {
     font-size: 2.5vw;
