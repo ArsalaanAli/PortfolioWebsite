@@ -16,6 +16,9 @@ export default function AboutMe() {
           <span className="highlightText">{age}</span> years old
         </div>
       </div>
+      <div>
+        <Technologies />
+      </div>
     </div>
   );
 
@@ -23,7 +26,15 @@ export default function AboutMe() {
     const bd = new Date("03/26/2003");
     const td = new Date();
     const diff = td - bd;
-    var ageYears = diff / 31556952000;
-    setAge(ageYears.toFixed(8));
+    const ageYears = diff / 31556952000;
+    setAge(ageYears.toFixed(9));
+  }
+
+  function Technologies() {
+    return (
+      <div>
+        <div className="sectionTitle">Languages and Technologies</div>
+      </div>
+    );
   }
 }

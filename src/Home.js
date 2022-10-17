@@ -27,15 +27,21 @@ const Sidebar = () => {
       <div className="githubIcon">
         <VscGithub
           onClick={() => {
-            window.location.replace("https://github.com/ArsalaanAli");
+            window.open(
+              "https://github.com/ArsalaanAli",
+              "_blank",
+              "noopener,noreferrer"
+            );
           }}
         />
       </div>
       <div className="linkedinIcon">
         <FaLinkedinIn
           onClick={() => {
-            window.location.replace(
-              "https://www.linkedin.com/in/arsalaan-ali-9681131a7/"
+            window.open(
+              "https://www.linkedin.com/in/arsalaan-ali-9681131a7/",
+              "_blank",
+              "noopener,noreferrer"
             );
           }}
         />

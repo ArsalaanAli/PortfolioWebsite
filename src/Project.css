@@ -36,8 +36,8 @@
   /* outline: 1px solid green; */
 }
 .projectImage {
-  width: auto;
-  height: 15vw;
+  height: auto;
+  width: 30vw;
   margin-top: 5vw;
 }
 .projectText {

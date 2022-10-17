@@ -1,6 +1,7 @@
 import "./Project.css";
 import visualg from "./Project Pictures/visualg.png";
 import squadify from "./Project Pictures/squadify.png";
+import fmd from "./Project Pictures/findmyduo.png";
 export default function Projects() {
   return (
     <div className="overallContainer">
@@ -15,9 +16,15 @@ export default function Projects() {
           link="https://www.visu-alg.com"
         />
         <Project
+          name="Find My Duo"
+          image={fmd}
+          desc="A social network app to help Valorant Players find new teammates. Built with React (Frontend), Firebase (Database), and the Discord Api (User Authentication)"
+          link="https://github.com/ArsalaanAli/findmyduo"
+        />
+        <Project
           name="Squadify"
           image={squadify}
-          desc="A Web App built to help users compare their spotify stats with their friends. Built with React, Flask, and Firebase."
+          desc="A Web App built to help users compare their spotify stats with their friends. Built with React (Frontend), Flask (Backend), and Firebase (Database)."
           link="https://github.com/ArsalaanAli/squadify"
         />
       </div>
@@ -31,11 +38,11 @@ function Project(props) {
       <img className="projectImage" src={props.image} alt="waterfall" />
       <div className="projectText">
         <h1>{props.name}</h1>
-        <p className="projectDesc">{props.desc}</p>
+        <div className="projectDesc">{props.desc}</div>
         <button
           className="projectButton"
           onClick={() => {
-            window.location.replace(props.link);
+            window.open(props.link, "_blank", "noopener,noreferrer");
           }}
         >
           Visit

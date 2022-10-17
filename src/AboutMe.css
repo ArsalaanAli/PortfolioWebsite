@@ -14,8 +14,14 @@
   color: var(--primary);
 }
 .amContainer {
-  margin-top: 50vw;
+  margin-top: 80vw;
   height: 50vw;
   width: 100%;
   /* outline: 1px solid blue; */
+}
+.sectionTitle {
+  margin: 3vw;
+  color: white;
+  text-align: center;
+  font-size: 2vw;
 }
