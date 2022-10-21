@@ -10,7 +10,9 @@ export default function AboutMe() {
   return (
     <div className="amContainer">
       <div>
-        <h1 className="amTitle">About Me</h1>
+        <div className="flexContainer">
+          <h1 className="amTitle">About Me</h1>
+        </div>
         <div className="amText">
           Hi, my name is Arsalaan and I'm{" "}
           <span className="highlightText">{age}</span> years old
