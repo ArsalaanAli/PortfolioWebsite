@@ -1,9 +1,11 @@
-.project {
-  position: relative;
-  width: 100%;
-  height: 5em;
-  margin-top: 20vw;
+.overallContainer {
   /* outline: 1px solid red; */
+}
+.project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* outline: 1px solid green; */
 }
 .projectTitle::after {
   content: "";
@@ -15,11 +17,10 @@
   background-color: var(--primary);
 }
 .projectTitle {
+  position: relative;
+  margin-top: 20vw;
   color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -90%);
+  text-align: center;
   font-size: 6vw;
 }
 .tempProj {

@@ -17,6 +17,7 @@ export default function AboutMe() {
         </div>
       </div>
       <div>
+        <Experience />
         <Technologies />
       </div>
     </div>
@@ -27,7 +28,15 @@ export default function AboutMe() {
     const td = new Date();
     const diff = td - bd;
     const ageYears = diff / 31556952000;
-    setAge(ageYears.toFixed(9));
+    setAge(ageYears.toFixed(8));
+  }
+
+  function Experience() {
+    return (
+      <div>
+        <div></div>
+      </div>
+    );
   }
 
   function Technologies() {

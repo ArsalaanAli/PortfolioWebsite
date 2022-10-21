@@ -1,5 +1,5 @@
 .container {
-  position: relative;
+  position: absolute;
   float: right;
   /* border: 1px solid red; */
   width: 40vw;
