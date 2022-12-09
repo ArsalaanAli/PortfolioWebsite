@@ -38,6 +38,7 @@
 
 .githubIcon:hover {
   color: white;
+  cursor: pointer;
 }
 
 .linkedinIcon {
@@ -51,6 +52,7 @@
 
 .linkedinIcon:hover {
   color: white;
+  cursor: pointer;
 }
 
 .typewriter {

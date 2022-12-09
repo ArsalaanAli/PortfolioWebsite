@@ -20,7 +20,6 @@ export default function AboutMe() {
       </div>
       <div>
         <Experience />
-        <Technologies />
       </div>
     </div>
   );
@@ -37,14 +36,6 @@ export default function AboutMe() {
     return (
       <div>
         <div></div>
-      </div>
-    );
-  }
-
-  function Technologies() {
-    return (
-      <div>
-        <div className="sectionTitle">Languages and Technologies</div>
       </div>
     );
   }

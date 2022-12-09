@@ -3,6 +3,7 @@ import visualg from "./Project Pictures/visualg.png";
 import squadify from "./Project Pictures/squadify.png";
 import fmd from "./Project Pictures/findmyduo.png";
 import heatseek from "./Project Pictures/heatseek.png";
+import stocker from "./Project Pictures/stocker.png";
 export default function Projects() {
   return (
     <div className="overallContainer">
@@ -15,6 +16,12 @@ export default function Projects() {
           image={visualg}
           desc="An interactive website for visualizing graph traversal algorithms built with React."
           link="https://www.visu-alg.com"
+        />
+        <Project
+          name="Stocker"
+          image={stocker}
+          desc="An AI sentiment analysis tool for the stock market built using React, Flask, and the Cohere API. Demoed at Hack Western 2022"
+          link="https://github.com/ArsalaanAli/Stocker"
         />
         <Project
           name="Find My Duo"
@@ -32,7 +39,7 @@ export default function Projects() {
           name="Heat-Seek"
           image={heatseek}
           desc="A 3D Mobile plane fighting game built with Unity, C#, and Cinema4D."
-          link="https://github.com/ArsalaanAli/squadify"
+          link="https://github.com/ArsalaanAli/HEAT-SEEK"
         />
       </div>
     </div>
