@@ -45,11 +45,18 @@ p:focus::after {
   transform: translate3d(0, 0.2em, 0);
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1000px) {
   li {
     margin: 0 1vw;
   }
   li p {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  li {
+    margin: 0 0.2vw;
   }
 }

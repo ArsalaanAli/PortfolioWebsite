@@ -84,11 +84,11 @@
 }
 @media only screen and (max-width: 1000px) {
   .homeContainer {
-    height: 60vw;
+    height: 70vw;
   }
   .title-holder {
     position: absolute;
-    top: 20vw;
+    top: 35vw;
     left: 50%;
     transform: translate(-70%, 0);
     width: 60vw;

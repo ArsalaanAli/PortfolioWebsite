@@ -8,19 +8,19 @@ export default function Navbar(props) {
         <li>
           <p
             onClick={() => {
-              props.homeRef.current?.scrollIntoView({ behavior: "smooth" });
+              props.projectsRef.current?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Home
+            Projects
           </p>
         </li>
         <li>
           <p
             onClick={() => {
-              props.projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+              props.homeRef.current?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Projects
+            Experience
           </p>
         </li>
         <li>
