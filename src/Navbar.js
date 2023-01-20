@@ -17,7 +17,7 @@ export default function Navbar(props) {
         <li>
           <p
             onClick={() => {
-              props.homeRef.current?.scrollIntoView({ behavior: "smooth" });
+              props.expRef.current?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             Experience
@@ -26,7 +26,7 @@ export default function Navbar(props) {
         <li>
           <p
             onClick={() => {
-              props.homeRef.current?.scrollIntoView({ behavior: "smooth" });
+              props.abRef.current?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             About Me
@@ -35,7 +35,7 @@ export default function Navbar(props) {
         <li>
           <p
             onClick={() => {
-              props.homeRef.current?.scrollIntoView({ behavior: "smooth" });
+              props.contRef.current?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             Contact Me

@@ -1,0 +1,55 @@
+.expContainer {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.expHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 4vw;
+}
+
+.expName {
+  color: var(--primary);
+  font-size: 2vw;
+  margin: 0;
+}
+
+.expTitle {
+  color: white;
+  font-size: 4vw;
+  margin: 0;
+}
+.expDate {
+  color: white;
+  margin-bottom: 1vw;
+  font-size: 2vw;
+}
+.expList {
+  display: block;
+  width: 30vw;
+  height: 20vw;
+  text-align: center;
+  /* outline: 1px solid red; */
+}
+.expLi::before {
+  content: "\2022";
+  color: var(--primary);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.expLi {
+  color: white;
+  font-size: 1.5vw;
+  margin: auto;
+  margin-bottom: 1vw;
+  text-align: center;
+}
