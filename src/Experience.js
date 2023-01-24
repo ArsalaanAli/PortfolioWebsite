@@ -33,7 +33,7 @@ const experiences = [
     title: "Software Intern",
     date: "Oct. 2022 - Dec. 2022",
     achievements: [
-      "Build an app that provides volunteers to organizations",
+      "Built an app that provides volunteers to organizations",
       "Used Figma to design prototypes for app frontend",
       "Presented app to RBC Exectutives",
     ],
