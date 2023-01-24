@@ -34,9 +34,9 @@
 .expList {
   display: block;
   width: 30vw;
-  height: 20vw;
+  max-height: 20vw;
   text-align: center;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 .expLi::before {
   content: "\2022";
