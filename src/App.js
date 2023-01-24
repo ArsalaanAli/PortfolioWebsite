@@ -22,8 +22,8 @@ function App() {
       <div ref={expRef}>
         <Experience />
       </div>
-      <div>
-        <AboutMe ref={abRef} />
+      <div ref={abRef}>
+        <AboutMe />
       </div>
     </div>
   );

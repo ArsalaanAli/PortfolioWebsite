@@ -9,13 +9,15 @@ function Experience() {
       </div>
       <div>
         {experiences.map((exp) => (
-          <div className="expHolder">
+          <div className="expHolder" key={exp.name}>
             <h1 className="expTitle">{exp.title}</h1>
             <div className="expName">{exp.name}</div>
             <div className="expDate">{exp.date}</div>
             <div className="expList">
-              {exp.achievements.map((point) => (
-                <li className="expLi">{point}</li>
+              {exp.achievements.map((point, ind) => (
+                <li className="expLi" key={ind}>
+                  {point}
+                </li>
               ))}
             </div>
           </div>

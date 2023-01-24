@@ -13,6 +13,7 @@ export default function Projects() {
       <div className="tempProj">
         {ProjectList.map((proj) => (
           <Project
+            key={proj.name}
             name={proj.name}
             image={proj.image}
             desc={proj.desc}
