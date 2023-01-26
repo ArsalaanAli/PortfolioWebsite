@@ -30,11 +30,13 @@
   color: white;
   margin-bottom: 1vw;
   font-size: 2vw;
+  /* outline: 1px solid blue; */
 }
 .expList {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 30vw;
-  max-height: 20vw;
+  max-height: 25vw;
   text-align: center;
   /* outline: 1px solid red; */
 }
