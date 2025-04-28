@@ -1,25 +1,77 @@
 import "./Project.css";
-import visualg from "./Project Pictures/visualg.png";
+import westernrank from "./Project Pictures/westernrank.png";
 import squadify from "./Project Pictures/squadify.png";
-import fmd from "./Project Pictures/findmyduo.png";
+import genesys from "./Project Pictures/genesys.png";
 import heatseek from "./Project Pictures/heatseek.png";
-import stocker from "./Project Pictures/stocker.png";
+import acutally from "./Project Pictures/actually.png";
+import { useState } from "react";
+
+const ProjectList = [
+  {
+    name: "Western Rank",
+    image: westernrank,
+    desc: "An open source course review platform for Western University and affiliate colleges.",
+    link: "https://www.westernrank.com/",
+  },
+  {
+    name: "Actually.Ai",
+    image: acutally,
+    desc: "Real-time AI factchecker. Provides a live transcription and fact-checking of any video stream using Azure AI and LLMs.",
+    link: "https://github.com/ArsalaanAli/Actually",
+  },
+  {
+    name: "Genesys AI Training Bot",
+    image: genesys,
+    desc: "Won 1st place at Hack The North (Genesys API). Combines the Genesys platform with LLMs to create a training bot for customer service agents.",
+    link: "https://github.com/ArsalaanAli/HackTheNorth2023",
+  },
+  {
+    name: "Squadify",
+    image: squadify,
+    desc: "A Web App built to help users compare their spotify stats with their friends. Built with React (Frontend), Flask (Backend), and Firebase (Database).",
+    link: "https://github.com/ArsalaanAli/squadify",
+  },
+  {
+    name: "Heat-Seek",
+    image: heatseek,
+    desc: "A 3D Mobile plane fighting game built with Unity, C#, and Cinema4D.",
+    link: "https://github.com/ArsalaanAli/HEAT-SEEK",
+  },
+];
+
 export default function Projects() {
+  const [selectedProject, setSelectedProject] = useState(ProjectList[0]);
+
   return (
     <div className="overallContainer">
       <div className="project">
         <h1 className="projectTitle">Projects</h1>
       </div>
-      <div className="tempProj">
-        {ProjectList.map((proj) => (
+      <div className="projects-layout">
+        {/* Top Bar */}
+        <div className="projects-topbar">
+          {ProjectList.map((proj) => (
+            <div
+              key={proj.name}
+              className={`topbar-project ${
+                selectedProject?.name === proj.name ? "selected" : ""
+              }`}
+              onClick={() => setSelectedProject(proj)}
+            >
+              <h3>{proj.name}</h3>
+            </div>
+          ))}
+        </div>
+
+        {/* Main Display */}
+        <div className="project-display">
           <Project
-            key={proj.name}
-            name={proj.name}
-            image={proj.image}
-            desc={proj.desc}
-            link={proj.link}
+            name={selectedProject.name}
+            image={selectedProject.image}
+            desc={selectedProject.desc}
+            link={selectedProject.link}
           />
-        ))}
+        </div>
       </div>
     </div>
   );
@@ -28,7 +80,7 @@ export default function Projects() {
 function Project(props) {
   return (
     <div className="projectContainer">
-      <img className="projectImage" src={props.image} alt="waterfall" />
+      <img className="projectImage" src={props.image} alt={props.name} />
       <div className="projectText">
         <h1>{props.name}</h1>
         <div className="projectDesc">{props.desc}</div>
@@ -44,36 +96,3 @@ function Project(props) {
     </div>
   );
 }
-
-const ProjectList = [
-  {
-    name: "Visu-Alg",
-    image: visualg,
-    desc: "An interactive website for visualizing graph traversal algorithms built with React.",
-    link: "https://www.visu-alg.com",
-  },
-  {
-    name: "Stocker",
-    image: stocker,
-    desc: "An AI sentiment analysis tool for the stock market built using React, Flask, and the Cohere API. Demoed at Hack Western 2022",
-    link: "https://github.com/ArsalaanAli/Stocker",
-  },
-  {
-    name: "Find My Duo",
-    image: fmd,
-    desc: "A social network app to help Valorant Players find new teammates. Built with React (Frontend), Firebase (Database), and the Discord Api (User Authentication).",
-    link: "https://github.com/ArsalaanAli/findmyduo",
-  },
-  {
-    name: "Squadify",
-    image: squadify,
-    desc: "A Web App built to help users compare their spotify stats with their friends. Built with React (Frontend), Flask (Backend), and Firebase (Database).",
-    link: "https://github.com/ArsalaanAli/squadify",
-  },
-  {
-    name: "Heat-Seek",
-    image: heatseek,
-    desc: "A 3D Mobile plane fighting game built with Unity, C#, and Cinema4D.",
-    link: "https://github.com/ArsalaanAli/HEAT-SEEK",
-  },
-];

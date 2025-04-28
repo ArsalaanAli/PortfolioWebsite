@@ -5,13 +5,13 @@ function Experience() {
   return (
     <div>
       <div className="flexContainer">
-        <h1 className="amTitle">Experience</h1>
+        <h1 className="expMainTitle">Experience</h1>
       </div>
       <div>
         {experiences.map((exp) => (
           <div className="expHolder" key={exp.name}>
-            <h1 className="expTitle">{exp.title}</h1>
-            <div className="expName">{exp.name}</div>
+            <h1 className="expTitle">{exp.name}</h1>
+            <div className="expName">{exp.title}</div>
             <div className="expDate">{exp.date}</div>
             <div className="expList">
               {exp.achievements.map((point, ind) => (
@@ -29,8 +29,34 @@ function Experience() {
 
 const experiences = [
   {
+    name: "Twilio",
+    title: "Software Engineer Intern (Incoming)",
+    date: "May. 2025 - Aug. 2025",
+    achievements: ["Joining as an engineer on the Twilio Messaging team"],
+  },
+  {
+    name: "J.D. Power",
+    title: "Software Development Intern",
+    date: "May. 2024 - April. 2025",
+    achievements: [
+      "Optimized database validation ETLs using Java to reduce network load and validation time",
+      "Designed API endpoints using Java, Spring, and SQL to efficiently handle high-volume HTTP requests",
+      "Used Ansible to automate server deployments. Created custom Docker containers for internal testing of alerts",
+    ],
+  },
+  {
+    name: "Hack Western",
+    title: "Lead Software Developer",
+    date: "May. 2023 - Dec. 2024",
+    achievements: [
+      "Led team to build all of the software required to run a Hackathon",
+      "Built a backend to serve 1000s of users with TypeScript, Express, and PostgreSQL",
+      " Translated Figma mockups and designs into high-quality responsive webapps using React and Tailwind",
+    ],
+  },
+  {
     name: "RBC Design Thinking Program",
-    title: "Software Intern",
+    title: "2022 Cohort Member",
     date: "Oct. 2022 - Dec. 2022",
     achievements: [
       "Built an app that provides volunteers to organizations",
@@ -46,25 +72,6 @@ const experiences = [
       "Taught Programming fundamentals in Python to a live class",
       "Created weekly lessons about Data structures and Algorithms",
       "Led a team of 4 instructors to plan an exciting and educational classroom experience",
-    ],
-  },
-  {
-    name: "MasseyHacks",
-    title: "Python Workshop Host",
-    date: "2020",
-    achievements: [
-      "Taught a workshop about the fundamentals of Python to a live class at a hackathon",
-      "Worked with coordinators to execute and live stream the workshop",
-    ],
-  },
-  {
-    name: "VMSS Debate",
-    title: "Software Developer",
-    date: "Feb. 2020 - Sep. 2021",
-    achievements: [
-      "Used Google Cloud Platform, Flask, and Python to implement a Python backend and create a digital database",
-      "Used Python to build a matchmaking system and user interface to facilitate club activities",
-      "Established a 100% automated system for record keeping and managing the club's data",
     ],
   },
   {

@@ -13,10 +13,14 @@ export default function AboutMe() {
         <div className="flexContainer">
           <h1 className="amTitle">About Me</h1>
         </div>
+        <div className="amText">2 Truths and a Lie:</div>
         <div className="amText">
-          Hi, my name is Arsalaan and I'm{" "}
-          <span className="highlightText">{age}</span> years old
+          - I'm <span className="highlightText">{age}</span> years old
         </div>
+      </div>
+      <div className="amText">- I can bake a realllly good banana bread</div>
+      <div className="amText">
+        - I can teleport but only when no one is looking.
       </div>
       <div>
         <Experience />

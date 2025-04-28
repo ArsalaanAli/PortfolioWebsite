@@ -1,64 +1,120 @@
 .overallContainer {
-  /* outline: 1px solid red; */
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .project {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* outline: 1px solid green; */
 }
+
+.projectTitle {
+  margin-top: 10rem;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  position: relative; /* Required for the ::after pseudo-element */
+}
+
 .projectTitle::after {
   content: "";
   position: absolute;
   bottom: -10px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  height: 0.07em;
+  height: 4px;
   background-color: var(--primary);
 }
-.projectTitle {
-  position: relative;
-  margin-top: 20vw;
-  color: white;
-  text-align: center;
-  font-size: 6vw;
-}
-.tempProj {
-  margin-top: 5vw;
-}
-.projectContainer {
-  left: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+
+.projects-layout {
   display: flex;
-  justify-content: space-around;
-  /* outline: 1px solid green; */
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1400px;
+  margin: 2rem auto;
 }
-.projectImage {
-  height: auto;
-  width: 30vw;
-  margin-top: 5vw;
+
+.projects-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
-.projectText {
-  font-size: 1vw;
-  position: relative;
+
+.topbar-project {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.topbar-project:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.topbar-project.selected {
+  background-color: var(--primary);
+}
+
+.topbar-project h3 {
   color: white;
-  margin-top: 4vw;
-  margin-left: 2vw;
+  margin: 0;
+  font-size: 1rem;
 }
+
+.project-display {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.projectImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.projectText {
+  color: white;
+  font-size: 1rem;
+}
+
 .projectButton {
-  font-size: 1.5vw;
+  font-size: 1rem;
   font-family: Poppins;
   color: white;
   background-color: var(--primary);
   border: none;
-  margin-top: 1vw;
   cursor: pointer;
   border-radius: 0.5em;
-  width: 5vw;
-  height: 3vw;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
 }
+
 .projectDesc {
-  font-size: 1.4vw;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1000px) {
+  .projectTitle {
+    margin-top: 18rem;
+  }
 }
