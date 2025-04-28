@@ -20,10 +20,7 @@ export default function AboutMe() {
       </div>
       <div className="amText">- I can bake a realllly good banana bread</div>
       <div className="amText">
-        - I can teleport but only when no one is looking.
-      </div>
-      <div>
-        <Experience />
+        - I can teleport but only when no one is looking
       </div>
     </div>
   );
@@ -34,13 +31,5 @@ export default function AboutMe() {
     const diff = td - bd;
     const ageYears = diff / 31556952000;
     setAge(ageYears.toFixed(8));
-  }
-
-  function Experience() {
-    return (
-      <div>
-        <div></div>
-      </div>
-    );
   }
 }
